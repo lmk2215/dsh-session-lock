@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Session Lock">
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="#1f2430"/>
+  <rect x="17" y="29" width="30" height="22" rx="5" fill="none" stroke="#7aa2ff" stroke-width="3.4"/>
+  <path d="M23.5 29v-5.6a8.5 8.5 0 0 1 17 0V29" fill="none" stroke="#7aa2ff" stroke-width="3.4" stroke-linecap="round"/>
+  <circle cx="32" cy="39.5" r="3.1" fill="#7aa2ff"/>
+  <rect x="30.6" y="40.6" width="2.8" height="6" rx="1.4" fill="#7aa2ff"/>
+</svg>

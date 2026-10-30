@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Session Lock",
+    "description": "Adds a lock button to every sidebar conversation row. A locked conversation blurs its chat area behind a password box, re-locks when the window loses focus or goes to the background, and unlocks permanently only from the sidebar unlock button."
+  }
+}

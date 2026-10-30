@@ -1,0 +1,7 @@
+# dsh-session-lock — bundle patch
+# The package declares `dsh.bundle.patch` in package.json, so installing it joins
+# the profile layer stack; this row mounts the plugin. The Client half renders
+# everything (sidebar lock button, lock veil, password dialog).
+- insert:
+    - id: dsh-session-lock
+      name: dsh-session-lock

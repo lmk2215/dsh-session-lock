@@ -1,0 +1,76 @@
+{
+  "name": "dsh-session-lock",
+  "version": "0.2.0",
+  "description": "Conversation lock for the DeepSeek Harness sidebar: lock any conversation, blur only the conversation area behind a password box, re-lock on blur or background, with a Host-backed password, Windows-password / cooling-period recovery, and an archive-restore gate.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "session",
+    "lock",
+    "privacy",
+    "password",
+    "sidebar",
+    "screen-lock"
+  ],
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "author": "lmk2215",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmk2215/dsh-session-lock.git"
+  },
+  "homepage": "https://github.com/lmk2215/dsh-session-lock#readme",
+  "bugs": {
+    "url": "https://github.com/lmk2215/dsh-session-lock/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    }
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    },
+    "engines": {
+      "dsh": ">=0.2.0-rc.1"
+    }
+  }
+}
